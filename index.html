@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Chemistry Bar — an interactive mobile perfumery and fragrance laboratory.">
+<title>The Chemistry Bar | The Art of You</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
+
+<style>
+
+
+
+/* =====================================
+   THE CHEMISTRY BAR
+   FONT SIZE CUSTOMIZATION
+   CHANGE FONT SIZES HERE!
+===================================== */
+
+/* ALL GENERAL WEBSITE TEXT */
+body {
+  font-size: 16px;
+}
+
+/* LOGO / BUSINESS NAME */
+header .brand {
+  font-size: 30px;
+}
+
+/* NAVIGATION MENU */
+header nav a {
+  font-size: 20px;
+}
+
+/* SMALL LAB LABELS */
+.hero .eyebrow {
+  font-size: 20px;
+}
+
+/* MAIN HOMEPAGE HEADING */
+h1 {
+  font-size: clamp(56px, 9vw, 112px);
+}
+
+/* SECTION HEADINGS */
+h2 {
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+/* SMALLER HEADINGS */
+h3 {
+  font-size: 26px;
+}
+
+/* MAIN DESCRIPTION PARAGRAPHS */
+.lead {
+  font-size: 18px;
+}
+
+/* SCENT CARD DESCRIPTIONS */
+.tile p {
+  font-size: 15px;
+}
+
+/* BUTTON TEXT */
+.button {
+  font-size: 14px;
+}
+
+/* QUIZ ANSWER TEXT */
+.quiz-option {
+  font-size: 16px;
+}
+
+/* FOOTER TEXT */
+footer {
+  font-size: 13px;
+}
+
+
+
+/* =====================================
+   01 / THE SCENT LIBRARY
+===================================== */
+
+/* 01 / INGREDIENT ARCHIVE */
+#library .eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--mocha);
+}
+
+/* THE SCENT LIBRARY HEADING */
+#library h2 {
+  font-size: 58px;
+  color: var(--espresso);
+}
+
+/* SCENT LIBRARY DESCRIPTION */
+#library .lead {
+  font-size: 18px;
+}
+
+
+/* =====================================
+   02 / FIND YOUR FORMULA
+===================================== */
+
+/* 02 / INTERACTIVE EXPERIMENT */
+#finder .eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--mocha);
+}
+
+/* FIND YOUR FORMULA HEADING */
+#finder h2 {
+  font-size: 58px;
+  color: var(--espresso);
+}
+
+/* FORMULA FINDER DESCRIPTION */
+#finder .lead {
+  font-size: 18px;
+}
+
+
+/* =====================================
+   03 / SCENT SCHOOL
+===================================== */
+
+/* 03 / LEARN THE SCIENCE */
+#school .eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--mocha);
+}
+
+/* SCENT SCHOOL HEADING */
+#school h2 {
+  font-size: 58px;
+  color: var(--espresso);
+}
+
+/* TOP, HEART & BASE NOTES HEADINGS */
+#school .tile h3 {
+  font-size: 28px;
+}
+
+
+/* =====================================
+   04 / EXPERIENCES
+===================================== */
+
+/* 04 / BOOK AN EXPERIENCE */
+#experiences .eyebrow {
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--mocha);
+}
+
+/* BRING THE LAB TO LIFE HEADING */
+#experiences h2 {
+  font-size: 58px;
+  color: var(--espresso);
+}
+
+/* EXPERIENCES DESCRIPTION */
+#experiences .lead {
+  font-size: 18px;
+}
+
+
+
+
+
+
+  /* THE CHEMISTRY BAR — BRAND COLORS */
+  :root {
+  /* OFFICIAL BRAND COLORS */
+  --lab-blue: #85a4be;
+  --powder-blue: #b3cfe5;
+  --warm-linen: #ddd4cb;
+  --mocha: #58463c;
+  --espresso: #2e201b;
+
+  /* ADDITIONAL WEBSITE COLORS */
+  --cream: #f7f5ee;
+  --ink: #252b28;
+  --line: #c8cec5;
+}
+
+
+
+
+
+
+html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--espresso);font-family:'DM Sans',sans-serif}header{position:sticky;top:0;background:#f7f5eef5;z-index:10;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:18px 6%;gap:20px}.brand{font-weight:600;letter-spacing:.16em;font-size:14px}nav{display:flex;gap:20px;flex-wrap:wrap}nav a{color:inherit;text-decoration:none;font-size:13px}nav a:hover{text-decoration:underline}section{padding:85px 7%}
+
+.hero{min-height:76vh;
+display:flex;
+align-items:center;
+background: radial-gradient(
+circle at 78% 42%,
+var(--powder-blue) 0%
+transparent 55%
+),
+var(--warm-linen);
+
+}
+.hero-inner{max-width:780px}.eyebrow{letter-spacing:.28em;text-transform:uppercase;font-size:11px;font-weight:600}h1,h2,h3{font-family:'Playfair Display',serif;font-weight:400}h1{font-size:clamp(56px,9vw,112px);line-height:1.05;margin:20px 0}h2{font-size:clamp(34px,5vw,58px);margin:12px 0 20px}.lead{max-width:590px;line-height:1.8;color:#525d56}.button{display:inline-block;background:var(--espresso);color:white;padding:16px 26px;text-decoration:none;border:0;cursor:pointer;font:inherit;font-size:13px;margin-top:20px}.button.secondary{background:transparent;color:var(--espresso);border:1px solid var(--espresso)}.light{background:white}.muted{background:var(--powder-blue)}.section-head{max-width:680px;margin-bottom:30px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.tile{padding:30px;background:#fff;border:1px solid var(--line);min-height:190px}.tile h3{font-size:27px;margin:8px 0}.tile p{line-height:1.7;color:#59625c}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{padding:10px 15px;background:transparent;border:1px solid #8d9b8f;cursor:pointer}.filter[aria-pressed=true]{background:var(--espresso);color:white}.note{font-size:13px;color:#536056}.quiz-option{display:block;width:100%;text-align:left;background:#fff;border:1px solid var(--line);padding:16px;margin:10px 0;cursor:pointer;font:inherit}.quiz-option:hover{background:var(--powder-blue)}.stripe-wrap{max-width:1100px;margin:30px auto}footer{text-align:center;padding:40px 15px;border-top:1px solid var(--line);font-size:13px}@media(max-width:720px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.grid{grid-template-columns:1fr}section{padding:65px 6%}.hero{min-height:65vh}
+}
+
+
+/* ===================================
+   THE CHEMISTRY BAR
+   COLOR CUSTOMIZATION
+   CHANGE COLORS HERE!
+=================================== */
+
+/* MAIN WEBSITE BACKGROUND */
+body {
+  background-color: var(--warm-linen);
+  color: var(--mocha);
+}
+
+/* NAVIGATION BAR */
+header {
+  background-color: var(--cream);
+  border-bottom: 1px solid var(--mocha);
+}
+
+nav a,
+.brand {
+  color: var(--espresso);
+}
+
+/* HOMEPAGE / HERO */
+.hero {
+  background: var(--powder-blue);
+  color: var(--mocha);
+}
+
+/* MAIN HEADINGS */
+h1, h2, h3 {
+  color: var(--espresso);
+}
+
+/* PRIMARY BUTTONS */
+.button {
+  background-color: var(--espresso);
+  color: var(--cream);
+}
+
+.button:hover {
+  background-color: var(--mocha);
+}
+
+/* SECONDARY BUTTONS */
+.button.secondary {
+  background-color: transparent;
+  color: var(--espresso);
+  border: 1px solid var(--espresso);
+}
+
+/* SCENT LIBRARY & BOOKING */
+.light {
+  background-color: var(--cream);
+}
+
+/* FORMULA FINDER */
+.muted {
+  background-color: var(--cream);
+}
+
+/* FRAGRANCE CARDS */
+.tile {
+  background-color: var(--cream);
+  border: 1px solid var(--mocha);
+}
+
+/* FILTER BUTTONS */
+.filter {
+  border: 1px solid var(--mocha);
+  color: var(--espresso);
+}
+
+.filter[aria-pressed="true"] {
+  background-color: var(--espresso);
+  color: var(--cream);
+}
+
+/* QUIZ ANSWERS */
+.quiz-option {
+  background-color: var(--cream);
+  border: 1px solid var(--mocha);
+}
+
+.quiz-option:hover {
+  background-color: var(--lab-blue);
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--espresso);
+  color: var(--cream);
+}
+
+
+/* =====================================
+   HOMEPAGE PHOTO LAYOUT
+===================================== */
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+}
+
+.hero-inner {
+  min-width: 0;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: 540px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 8px;
+}
+
+/* MOBILE PHONE LAYOUT */
+@media (max-width: 800px) {
+  .hero-layout {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .hero-image img {
+    height: 380px;
+  }
+}
+
+
+/* TEMPORARILY HIDE THE SCENT LIBRARY */
+#library {
+  display: none;
+}
+
+
+</style>
+</head>
+
+
+
+<body>
+
+<header><div class="brand">THE CHEMISTRY BAR</div><nav aria-label="Main navigation"><a href="#lab">The Lab</a><a href="#library">Scent Library</a><a href="#finder">Formula Finder</a><a href="#school">Scent School</a><a href="#experiences">Experiences</a></nav></header>
+<main>
+
+<section id="lab" class="hero">
+<div class="hero-layout">
+
+<div class="hero-inner">
+
+
+
+<p class="eyebrow">Mobile perfumery · The art of you</p><h1>Every scent<br>is a formula.</h1><p class="lead">Welcome to The Chemistry Bar, where creativity meets fragrance science. Explore the notes, discover your scent personality, and craft something unmistakably yours.</p><a class="button" href="#experiences">Enter the Lab</a>
+
+ </div>
+
+    <div class="hero-image">
+      <img src="homepage.png" 
+alt="The Chemistry Bar fragrance formula workstation">
+
+    </div>
+</div>
+
+</section>
+
+
+
+<section id="library" class="light"><div class="section-head"><p class="eyebrow">01 / Ingredient archive</p><h2>The Scent Library</h2><p class="lead">Explore a preview of our ingredients by fragrance family. Our full current inventory will be added once confirmed.</p></div><div class="filters" id="filters" aria-label="Filter fragrances"></div><div class="grid" id="scents"></div></section>
+<section id="finder" class="muted"><div class="section-head"><p class="eyebrow">02 / Interactive experiment</p><h2>Find Your Formula</h2><p class="lead">A first-step fragrance personality quiz. Your results suggest a scent direction, not a finished perfume recipe.</p></div><div id="quiz" style="max-width:650px" aria-live="polite"></div></section>
+<section id="school"><p class="eyebrow">03 / Learn the science</p><h2>Scent School</h2><div class="grid"><article class="tile"><h3>Top notes</h3><p>The first impression: often bright, fresh, and quick to fade.</p></article><article class="tile"><h3>Heart notes</h3><p>The character of the fragrance as it develops on skin.</p></article><article class="tile"><h3>Base notes</h3><p>The foundation that adds depth and often lasts the longest.</p></article></div></section>
+<section id="experiences" class="light"><p class="eyebrow">04 / Book an experience</p><h2>Bring the Lab to Life</h2><p class="lead">Explore available experiences through our secure Stripe checkout.</p><div class="stripe-wrap"><stripe-pricing-table pricing-table-id="prctbl_1UTDF9HtoDfW6zuLaxNzTYLq" publishable-key="pk_live_51SPCslHtoDfW6zuLk6sxBbFdfSuHfq65lvNUfgmhMCiCUF0kdvmlkgj9E0UEpx9Fu7T5NFqD8ZOa0YfgVjbEb9Q400jQ9YulL7"></stripe-pricing-table></div></section>
+</main><footer>© The Chemistry Bar · Mobile Perfumery · The Art of You</footer>
+<script async src="https://js.stripe.com/v3/pricing-table.js"></script>
+<script>
+// Preview entries only. Replace with the confirmed current scent inventory.
+const fragrances=[{name:'Amber Romance',family:'Warm',profile:'Soft, amber-inspired warmth.'},{name:'Apple Fresh Green',family:'Fresh',profile:'Crisp, green and fruity.'},{name:'Apricot and Peach',family:'Fruity',profile:'Juicy stone-fruit character.'},{name:'Arabian White Musk',family:'Warm',profile:'Clean, musky softness.'},{name:'Beachwood and Mango',family:'Fruity',profile:'Tropical fruit with woody character.'}];
+const families=['All',...new Set(fragrances.map(s=>s.family))];const filterRoot=document.querySelector('#filters'),scentRoot=document.querySelector('#scents');function showScents(family){filterRoot.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b.textContent===family)));scentRoot.replaceChildren();fragrances.filter(s=>family==='All'||s.family===family).forEach(s=>{const card=document.createElement('article');card.className='tile';const tag=document.createElement('p');tag.className='eyebrow';tag.textContent=s.family;const title=document.createElement('h3');title.textContent=s.name;const desc=document.createElement('p');desc.textContent=s.profile;card.append(tag,title,desc);scentRoot.append(card)})}families.forEach(f=>{const btn=document.createElement('button');btn.className='filter';btn.type='button';btn.textContent=f;btn.addEventListener('click',()=>showScents(f));filterRoot.append(btn)});showScents('All');
+const questions=[{question:'Which atmosphere feels most like you?',answers:[['A sunlit garden','Fresh'],['A tropical getaway','Fruity'],['A candlelit lounge','Warm']]},{question:'Which feeling should your fragrance evoke?',answers:[['Bright and energized','Fresh'],['Playful and joyful','Fruity'],['Cozy and confident','Warm']]},{question:'Pick a scent direction.',answers:[['Green and crisp','Fresh'],['Juicy and sweet','Fruity'],['Soft and enveloping','Warm']]}];let step=0;const scores={Fresh:0,Fruity:0,Warm:0},quiz=document.querySelector('#quiz');function drawQuiz(){quiz.replaceChildren();if(step===questions.length){const family=Object.keys(scores).sort((a,b)=>scores[b]-scores[a])[0];const heading=document.createElement('h3');heading.textContent='Your scent direction: '+family;const p=document.createElement('p');p.textContent='Start with the '+family.toLowerCase()+' family in our Scent Library, then explore complementary notes during your lab experience.';const restart=document.createElement('button');restart.className='button';restart.textContent='Retake the quiz';restart.onclick=()=>{step=0;Object.keys(scores).forEach(k=>scores[k]=0);drawQuiz()};quiz.append(heading,p,restart);return}const q=questions[step],heading=document.createElement('h3');heading.textContent=`${step+1} / ${questions.length} — ${q.question}`;quiz.append(heading);q.answers.forEach(([label,family])=>{const btn=document.createElement('button');btn.className='quiz-option';btn.textContent=label;btn.onclick=()=>{scores[family]++;step++;drawQuiz()};quiz.append(btn)})}drawQuiz();
+</script>
+</body></html>
