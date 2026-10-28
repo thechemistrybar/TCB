@@ -7,6 +7,41 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display&display=swap" rel="stylesheet">
 
+/* SCULPTING YOUR ESSENCE */
+.featured-experience {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 40px;
+  padding: 30px;
+  margin: 40px 0;
+  background: var(--warm-linen);
+  border: 1px solid var(--mocha);
+}
+
+.featured-experience img {
+  display: block;
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.featured-details h3 {
+  font-size: 36px;
+}
+
+@media (max-width: 800px) {
+  .featured-experience {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .featured-experience img {
+    height: 260px;
+  }
+}
+
 <style>
 
 
@@ -390,7 +425,41 @@ alt="The Chemistry Bar fragrance formula workstation">
 <section id="library" class="light"><div class="section-head"><p class="eyebrow">01 / Ingredient archive</p><h2>The Scent Library</h2><p class="lead">Explore a preview of our ingredients by fragrance family. Our full current inventory will be added once confirmed.</p></div><div class="filters" id="filters" aria-label="Filter fragrances"></div><div class="grid" id="scents"></div></section>
 <section id="finder" class="muted"><div class="section-head"><p class="eyebrow">02 / Interactive experiment</p><h2>Find Your Formula</h2><p class="lead">A first-step fragrance personality quiz. Your results suggest a scent direction, not a finished perfume recipe.</p></div><div id="quiz" style="max-width:650px" aria-live="polite"></div></section>
 <section id="school"><p class="eyebrow">03 / Learn the science</p><h2>Scent School</h2><div class="grid"><article class="tile"><h3>Top notes</h3><p>The first impression: often bright, fresh, and quick to fade.</p></article><article class="tile"><h3>Heart notes</h3><p>The character of the fragrance as it develops on skin.</p></article><article class="tile"><h3>Base notes</h3><p>The foundation that adds depth and often lasts the longest.</p></article></div></section>
-<section id="experiences" class="light"><p class="eyebrow">04 / Book an experience</p><h2>Bring the Lab to Life</h2><p class="lead">Explore available experiences through our secure Stripe checkout.</p><div class="stripe-wrap"><stripe-pricing-table pricing-table-id="prctbl_1UTDF9HtoDfW6zuLaxNzTYLq" publishable-key="pk_live_51SPCslHtoDfW6zuLk6sxBbFdfSuHfq65lvNUfgmhMCiCUF0kdvmlkgj9E0UEpx9Fu7T5NFqD8ZOa0YfgVjbEb9Q400jQ9YulL7"></stripe-pricing-table></div></section>
+<section id="experiences" class="light"><p class="eyebrow">04 / Book an experience</p><h2>Bring the Lab to Life</h2><p class="lead">Explore available experiences through our secure Stripe checkout.</p>
+   
+   
+<!-- SCULPTING YOUR ESSENCE -->
+<div class="featured-experience">
+
+  <img src="featured-experience.png"
+       alt="Sculpting Your Essence">
+
+  <div class="featured-details">
+    <p class="eyebrow">Featured Experience</p>
+    <h3>Sculpting Your Essence</h3>
+
+    <p>
+      Discover Sculpting Your Essence,
+      a special experience presented by
+      The Chemistry Bar.
+    </p>
+
+    <a
+      href="https://buy.stripe.com/cNi4gz7gd7ch65V47X5gc0m"
+      class="button"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Reserve Your Spot
+    </a>
+  </div>
+
+</div>
+
+   
+   
+   
+   <div class="stripe-wrap"><stripe-pricing-table pricing-table-id="prctbl_1UTDF9HtoDfW6zuLaxNzTYLq" publishable-key="pk_live_51SPCslHtoDfW6zuLk6sxBbFdfSuHfq65lvNUfgmhMCiCUF0kdvmlkgj9E0UEpx9Fu7T5NFqD8ZOa0YfgVjbEb9Q400jQ9YulL7"></stripe-pricing-table></div></section>
 </main><footer>© The Chemistry Bar · Mobile Perfumery · The Art of You</footer>
 <script async src="https://js.stripe.com/v3/pricing-table.js"></script>
 <script>
